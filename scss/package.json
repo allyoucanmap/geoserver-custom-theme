@@ -1,0 +1,18 @@
+{
+  "name": "geoserver-custom-theme",
+  "version": "1.0.0",
+  "description": "unpacked browser extension to swicth geoserver style to a custom theme",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass main.scss ../css/main.css --output-style compressed"
+  },
+  "author": "allyoucanmap",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "5.13.0",
+    "codemirror": "4.11.0",
+    "node-sass": "4.14.1",
+    "select2": "4.0.13",
+    "spectrum-colorpicker": "1.8.1"
+  }
+}

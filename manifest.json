@@ -1,0 +1,37 @@
+{
+    "name": "GeoServer Custom Theme",
+    "version": "1.0",
+    "description": "Unpacked browser extension to swicth GeoServer style to a custom theme",
+    "author": "allyoucanmap",
+    "manifest_version": 2,
+    "web_accessible_resources": [
+        "css/light.css",
+        "css/dark.css",
+        "css/fontawesome-free/webfonts/fa-solid-900.eot",
+        "css/fontawesome-free/webfonts/fa-solid-900.svg",
+        "css/fontawesome-free/webfonts/fa-solid-900.ttf",
+        "css/fontawesome-free/webfonts/fa-solid-900.woff",
+        "css/fontawesome-free/webfonts/fa-solid-900.woff2",
+        "icon/light.svg",
+        "icon/dark.svg"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/geoserver/web/*",
+                "https://*/geoserver/web/*"
+            ],
+            "css": [
+                "css/main.css"
+            ],
+            "js": [
+                "js/content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon/16.png",
+        "48": "icon/48.png",
+        "128": "icon/128.png"
+    }
+}
